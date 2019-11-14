@@ -14,6 +14,8 @@
 # Installing full lampStack and php mysql bindings
 #######################################################################
 
+  - shell: amazon-linux-extras enable php7.3
+
   - name: Installing Complete LampStack
     yum: name={{ item }} state=present
     with_items:
