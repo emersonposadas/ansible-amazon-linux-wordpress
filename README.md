@@ -1,4 +1,4 @@
-## Ansible PlayBook To Install Wordpress In Amazon Linux Ec2
+## Ansible PlayBook To Install Wordpress In Amazon Linux 2 
 
 This ansible playbook will install full Lampstack and latest wordpress on aws ec2 running amzn2.
 
@@ -17,7 +17,7 @@ This ansible playbook is a fork from the following repository:
 
 ### - Edit the hosts file as your need.
 
-- EIP = External IP of your Ec2.
+- EIP = External IP of your EC2 instance
 - KeyPath = private key path.
 
 ```
