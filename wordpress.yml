@@ -13,7 +13,6 @@
 #
 # Installing full lampStack and php mysql bindings
 #
-
   - shell: amazon-linux-extras enable php7.3
 
   - name: Installing Complete LampStack
@@ -32,11 +31,9 @@
     - mariadb
     - httpd
 
-
 #
 # Configuring Mysql And Creating Necessary User,Database for wordpress
 #
-
   - name: mysql-removing anon users.
     mysql_user: login_user=root login_password='' name=''  host_all=yes state=absent
 
@@ -52,8 +49,6 @@
 #
 # Configuring Mysql And Creating Necessary User,Database for wordpress
 #
-
-
   - name: Downloading Wodpress.
     get_url: url=http://www.wordpress.org/latest.tar.gz  dest=/tmp/wordpress.tar
 
@@ -100,7 +95,6 @@
 #
 # Wordpress Configuration
 #
-
   - name: Chaning Doc-root permission.
     shell: 'chown -R apache:apache /var/www/html/'
     args:
@@ -120,7 +114,6 @@
 #
 # Final Service Restart
 #
-
   - name: Restarting LampStack.
     service: name={{ item }} state=restarted
     with_items:
