@@ -1,9 +1,11 @@
 ## Ansible PlayBook To Install Wordpress In Amazon Linux Ec2
 
-This ansible playbook will install full Lampstack and wordpress on aws ec2 running amazon linux AMI.
+This ansible playbook will install full Lampstack and wordpress on aws ec2 running amzn2.
 
 
 #### - Download the git repo.
+
+This ansible playbook is a fork from the following repository:
 
 ```
 [gnu]$ git clone git@github.com:beingarju/ansible-amazon-linux-wordpress.git
